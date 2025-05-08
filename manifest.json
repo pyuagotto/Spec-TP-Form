@@ -1,0 +1,41 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "[1.21.80]Spectator Teleport Form",
+        "description": "BetaAPIsを有効にする必要があります",
+        "uuid": "019e44bc-72e4-5231-be88-ffba8e9f8d72",
+        "version": [
+            0,
+            1,
+            0
+        ],
+        "min_engine_version": [
+            1,
+            20,
+            40
+        ]
+    },
+    "modules": [
+        {
+            "description": "GameTest module",
+            "type": "script",
+            "uuid": "5cb4d5e9-512a-11d9-b0ff-d383800c0111",
+            "version": [
+                0,
+                1,
+                0
+            ],
+            "entry": "scripts/index.js"
+        }
+    ],
+    "dependencies": [
+        {
+            "module_name": "@minecraft/server",
+            "version": "2.0.0-beta"
+        },
+        {
+            "module_name": "@minecraft/server-ui",
+            "version": "2.0.0-beta"
+        }
+    ]
+}
