@@ -13,7 +13,7 @@ const ERROR_MESSAGES = {
  * @returns {Player[]} プレイヤーリスト
  */
 const getPlayersExcludingSpectator = function() {
-    return Array.from(world.getPlayers({ excludeGameModes: [GameMode.spectator] }));
+    return Array.from(world.getPlayers({ excludeGameModes: [GameMode.Spectator] }));
 }
 
 /**
@@ -52,7 +52,7 @@ const spec = function(origin) {
 
     const source = origin.sourceEntity;
 
-    if (source.getGameMode() !== GameMode.spectator) {
+    if (source.getGameMode() !== GameMode.Spectator) {
         return { status: CustomCommandStatus.Failure, message: ERROR_MESSAGES.NOT_SPECTATOR };
     }
 
